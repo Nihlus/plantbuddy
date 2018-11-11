@@ -13,10 +13,6 @@ project(plantbuddy-meta)
 # Set up included libraries
 get_board_id(ARDUINO_BOARD_ID uno)
 
-find_arduino_library(SSD1306 Adafruit_SSD1306 ${ARDUINO_BOARD_ID} 3RD_PARTY)
-find_arduino_library(GFX Adafruit_GFX_Library ${ARDUINO_BOARD_ID} 3RD_PARTY)
-link_arduino_library(SSD1306 GFX ${ARDUINO_BOARD_ID})
-
 # Add subprojects
 add_subdirectory(microui)
 add_subdirectory(plantbuddy)
