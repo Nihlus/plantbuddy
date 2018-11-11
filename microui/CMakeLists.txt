@@ -1,6 +1,6 @@
 project(microui)
 
-add_arduino_library(${PROJECT_NAME} ${ARDUINO_BOARD_ID})
+add_arduino_library(${PROJECT_NAME} ${ARDUINO_BOARD_ID} include/dummy.h)
 
 target_sources(${PROJECT_NAME}
     PRIVATE
